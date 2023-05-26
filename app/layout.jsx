@@ -1,12 +1,13 @@
+import Nav from '@components/Nav';
+// import Provider from '@components/Provider';
 import '@styles/globals.css';
-import { Children } from 'react';
 
 export const metadata = {
     title: 'Promptopia',
     description: 'Discover and share AI prompts'
 }
 
-const Rootlayout = () => {
+const Rootlayout = ({ children }) => {
   return (
     <html lang="en">
       <body>
@@ -14,7 +15,8 @@ const Rootlayout = () => {
           <div className="gradient" />
         </div>
         <div className="app">
-          {Children}
+          <Nav />
+          {children}
         </div>
       </body>
     </html>
