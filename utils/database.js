@@ -20,6 +20,6 @@ export const connectToDB = async () => {
 
         console.log("MonoDB Connect")
     } catch (error) {
-        console.log(error)
+        console.log("not working")
     }
 }
