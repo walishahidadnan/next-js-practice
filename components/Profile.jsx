@@ -2,7 +2,9 @@ import React from 'react'
 
 const Profile = () => {
   return (
-    <div>Porfile</div>
+    <div>Porfile
+      
+    </div>
   )
 }
 
