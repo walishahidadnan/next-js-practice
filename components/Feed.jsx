@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 
-// import PromptCard from "./PromptCard";
+import PromptCard from "./ProfileCard";
 
 const PromptCardList = ({ data, handleTagClick }) => {
   return (
@@ -31,6 +31,7 @@ const Feed = () => {
     const data = await response.json();
 
     setAllPosts(data);
+    console.log(response)
   };
 
   useEffect(() => {
@@ -50,8 +51,7 @@ const Feed = () => {
   const handleSearchChange = (e) => {
     clearTimeout(searchTimeout);
     setSearchText(e.target.value);
-
-    // debounce method
+    console.log(e.target.value)
     setSearchTimeout(
       setTimeout(() => {
         const searchResult = filterPrompts(e.target.value);
