@@ -48,4 +48,4 @@ const CreatePrompt = () => {
   );
 };
 
-export default CreatePrompt;s
+export default CreatePrompt;
